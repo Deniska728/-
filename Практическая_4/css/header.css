@@ -1,0 +1,79 @@
+header {
+    max-width: 100vw;
+}
+
+header>section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    padding-top: 5vh;
+    font-size: 36px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #000;
+}
+
+header>section>p {
+    font-size: 0.61rem;
+    color: #a8a8a8;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+header > section:last-child{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 4vh 0 4vh 0;
+    /* box-shadow: inset #000; */
+}
+
+.list-position{
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar{
+    width: 40vw;
+    font-size: 0.8rem;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #000;
+    border-bottom: 1px solid transparent;
+}
+
+.navbar a:hover{
+    border-bottom-color: #000;
+    transition: 0.3s;
+}
+
+.icons{
+    width: 8vw;
+}
+
+.search{
+    width: 10vw;
+    position: relative;
+}
+
+.search::before{
+    content: 'л';
+    height: 5px;
+    width: 5px;
+    position: absolute;  
+}
+
+input[type="search"]{
+    width: 100%;
+}
+
+

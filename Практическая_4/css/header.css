@@ -30,7 +30,8 @@ header > section:last-child{
     justify-content: space-around;
     flex-direction: row;
     padding: 4vh 0 4vh 0;
-    /* box-shadow: inset #000; */
+    margin-top: 20px;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.08);
 }
 
 .list-position{
@@ -60,20 +61,33 @@ header > section:last-child{
     width: 8vw;
 }
 
+.icons a{
+    color: #000;
+}
+
 .search{
     width: 10vw;
     position: relative;
+    display: flex;
+    align-items: center;
 }
 
-.search::before{
-    content: 'л';
-    height: 5px;
-    width: 5px;
-    position: absolute;  
+.search .icon{
+    margin-left: 3px;
 }
 
 input[type="search"]{
-    width: 100%;
+    width: 80%;
+    border: 1px solid black;
+    border-color: transparent #000 transparent transparent;
 }
 
+.search:hover input[type="search"]{
+    transition: 0.3s;
+    border-color:#000;
+}
+
+input[type="search"]:focus{
+    border-color:#000;
+}
 

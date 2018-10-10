@@ -10,10 +10,10 @@
 
     section.captioned-gallery { 
       width: 100%;
+      position: relative;
       overflow: hidden; 
     }
     figure.slider { 
-      position: relative;
       width: 500%;
       font-size: 0;
       animation: 40s animations infinite;

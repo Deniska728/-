@@ -10,11 +10,8 @@
     95% { left: -300%; }
     100% { left: -400%; }
     }
-
-    figure { 
-      margin: 0;
-    }
-    div#captioned-gallery { 
+    
+    section.captioned-gallery { 
       width: 100%;
       overflow: hidden; 
     }

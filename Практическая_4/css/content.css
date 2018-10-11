@@ -3,6 +3,7 @@
     margin: auto;
     display: flex;
     justify-content: space-between;
+    margin-top: 50px;
 }
 
 .content > .posts{
@@ -11,7 +12,6 @@
     flex-wrap: wrap;
     justify-content: space-around;
     background: #dddddd;
-    height: 400px;
 }
 
 .content > aside{
@@ -20,5 +20,22 @@
     display: flex;
     flex-direction: column;
     background: #ee3d3d;
-    height: 400px;
+}
+
+.post{
+    max-width: 48%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.post > img{
+    width: 100%;
+    margin: auto;
+}
+
+.post > h3{
+    font-size: 1.5rem;
+    text-align: center;
 }

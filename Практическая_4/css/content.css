@@ -6,6 +6,7 @@
     margin-top: 50px;
 }
 
+/*only posts*/
 .content > .posts{
     width: 65%;
     display: flex;
@@ -14,14 +15,7 @@
     background: #dddddd;
 }
 
-.content > aside{
-    max-width: 30%;
-    min-width: 30%;
-    display: flex;
-    flex-direction: column;
-    background: #ee3d3d;
 
-}
 
 .post{
     max-width: 48%;
@@ -41,6 +35,18 @@
     text-align: center;
     height: 420px;
     margin-left: 20px;
+}
+
+
+/*only aside*/
+
+.content > aside{
+    max-width: 30%;
+    min-width: 30%;
+    display: flex;
+    flex-direction: column;
+    background: #ee3d3d;
+
 }
 
 .content > aside img{

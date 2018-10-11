@@ -20,7 +20,7 @@
     min-width: 40%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between
+    justify-content: flex-start;
 }
 
 .post{
@@ -29,6 +29,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
 }
 
 .post > img{
@@ -46,11 +47,8 @@
 }
 
 .post > h3{
-<<<<<<< HEAD
     font-size: 1.5rem;
     text-align: center;
-    height: 400px;
-=======
     font-size: 1.3rem;
     font-weight: bold;
 }
@@ -73,7 +71,6 @@
 
 mark{
     background: none;
->>>>>>> a65a7a92f563d61da71374f379d6acc7df0fb40e
 }
 
 

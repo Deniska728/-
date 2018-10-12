@@ -47,11 +47,10 @@
 }
 
 .post > h3{
-<<<<<<< HEAD
-=======
     font-size: 1.5rem;
     text-align: center;
->>>>>>> e169784b2e31471308c98f02312cc185b2703847
+    font-size: 1.5rem;
+    text-align: center;
     font-size: 1.3rem;
     font-weight: bold;
     line-height: 1.75rem;
@@ -75,8 +74,6 @@
 
 mark{
     background: none;
-<<<<<<< HEAD
-=======
 }
 
 .show-more{
@@ -100,7 +97,6 @@ mark{
 
 .show-more i{
     color: #9b9b9b;
->>>>>>> e169784b2e31471308c98f02312cc185b2703847
 }
 
 

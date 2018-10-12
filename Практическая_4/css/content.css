@@ -74,6 +74,29 @@ mark{
     background: none;
 }
 
+.show-more{
+    width: 100%;
+    border-top: 1px dashed #b8b8b8 ;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.show-more .refresh{
+    margin: 20px 0 20px 0;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #dddddd;
+    box-shadow: 0 0 10px rgba(0,0,0,0.08);
+}
+
+.show-more i{
+    color: #9b9b9b;
+}
+
 
 /*only aside*/
 

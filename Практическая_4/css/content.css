@@ -20,7 +20,7 @@
     min-width: 40%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between
+    justify-content: flex-start;
 }
 
 .post{
@@ -29,6 +29,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
 }
 
 .post > img{
@@ -47,12 +48,13 @@
 
 .post > h3{
 <<<<<<< HEAD
+=======
     font-size: 1.5rem;
     text-align: center;
-    height: 400px;
-=======
+>>>>>>> e169784b2e31471308c98f02312cc185b2703847
     font-size: 1.3rem;
     font-weight: bold;
+    line-height: 1.75rem;
 }
 
 .post > p{
@@ -73,7 +75,32 @@
 
 mark{
     background: none;
->>>>>>> a65a7a92f563d61da71374f379d6acc7df0fb40e
+<<<<<<< HEAD
+=======
+}
+
+.show-more{
+    width: 100%;
+    border-top: 1px dashed #b8b8b8 ;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.show-more .refresh{
+    margin: 20px 0 20px 0;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #dddddd;
+    box-shadow: 0 0 10px rgba(0,0,0,0.08);
+}
+
+.show-more i{
+    color: #9b9b9b;
+>>>>>>> e169784b2e31471308c98f02312cc185b2703847
 }
 
 
@@ -90,6 +117,11 @@ mark{
 .content > aside > article{
    margin: 2vh 0;
 }
+
+.content > aside > article:first-child{
+    margin-top: 0;
+ }
+
 .about > img{
     width: 100%;
     height: auto;
@@ -113,7 +145,7 @@ mark{
 }
 
 .follow{
-    width: 30%;
+    max-width: 30%;
     margin-top: 15px;
     display: flex;
     flex-direction: row;
@@ -125,7 +157,7 @@ mark{
 }
 
 .form{
-    width: 100%;
+    max-width: 90%;
     height: 120px;
     background-color: #f5f5f5;
     padding: 5%;
@@ -142,7 +174,6 @@ mark{
 .form > form{
     display: flex;
     flex-direction: row;
-
 }
 
 input[type="email"]{
@@ -150,7 +181,6 @@ input[type="email"]{
     border: 1px solid #dfdfdf;
     background-color: #f5f5f5;
     margin: 0;
-
 }
 
 input[type="email"]::placeholder{
@@ -172,3 +202,5 @@ input[type="submit"]{
    font-size: 0.9rem;
    padding: 10px 18px;
 }
+
+

@@ -32,11 +32,20 @@
     justify-content: flex-start;
 }
 
-.post > img{
+.post > img, .post .img-container, .post > .img-container > img{
     width: 100%;
-    margin: auto;
+    height: auto;
 }
 
+.img-container{
+    position: relative;
+}
+
+.img-container > a{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}
 .post > a{
     color: #707070;
     text-decoration: none;

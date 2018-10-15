@@ -108,7 +108,17 @@ mark{
     color: #9b9b9b;
 }
 
+.show-more .refresh:hover{
+    transition: all ease-in-out 0.3s;
+    background-color: #252525;
+    color: #b8b8b8;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.274);
+}
 
+.show-more .refresh:hover i{
+    transition: 1s;
+    transform: rotate(180deg);
+}
 /*only aside*/
 
 .content > aside{

@@ -1,0 +1,33 @@
+.instagram{
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headline{
+    width: 27vw;
+    border-bottom: 1px solid #dcdcdc;
+    box-shadow: 0 -1px 1px #fafafa;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.headline::before{
+    content: '';
+    position: absolute;
+    display: block;
+    bottom: -7.5px;
+    left: calc(50% - 7.5px);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #b2ae7e;
+
+}
+
+.headline > h2 {
+    color: black;
+    padding-bottom: 20px;
+}

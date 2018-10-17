@@ -133,6 +133,15 @@ mark{
    margin: 2vh 0;
 }
 
+aside article h2{
+    font-size: 2.5rem;
+    color: black;
+    margin-top: 3px;
+    text-align: left;
+    border-bottom: 1px solid #dcdcdc;
+    width: 100%;
+}
+
 .content > aside > article:first-child{
     margin-top: 0;
  }
@@ -178,7 +187,7 @@ mark{
     padding: 5%;
 }
 
-.form>h2{
+.form>h3{
     text-align: start;
     font-size: 1.5rem;
     color: #252525;
@@ -219,3 +228,54 @@ input[type="submit"]{
 }
 
 
+.aside-post{
+    max-width: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.aside-post li{
+    margin: 5vh 0;
+
+}
+
+.aside-post p{
+    margin: 2vh 0;
+
+}
+
+.aside-post .theme{
+    font-size: 1rem;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.aside-post .heading{
+    font-size: 1.3rem;
+    color: black;
+    font-weight: bold;
+}
+
+.inst-aside{
+    max-width: 100%;
+}
+
+.inst-aside .inst{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5vh 0;
+}
+
+.inst-aside a{
+    display: block;
+    width: 50%;
+    height: 50%;
+    outline: none;
+}
+
+.inst-aside img{
+    width: 100%;
+    height: 100%;
+}

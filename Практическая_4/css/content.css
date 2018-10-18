@@ -134,7 +134,7 @@ mark{
 }
 
 aside article h2{
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: black;
     margin-top: 3px;
     text-align: left;
@@ -237,12 +237,12 @@ input[type="submit"]{
 
 
 .aside-post li{
-    margin: 5vh 0;
+    margin: 6vh 0;
 
 }
 
 .aside-post p{
-    margin: 2vh 0;
+    margin: 2.5vh 0;
 
 }
 
@@ -278,4 +278,34 @@ input[type="submit"]{
 .inst-aside img{
     width: 100%;
     height: 100%;
+}
+
+.categ{
+    display: flex;
+    flex-direction: column;
+}
+
+.categ li{
+width: 100%;
+margin: 0.9vh 0;
+padding: 0.9vh 0 1.3vh 0;
+}
+
+.categ li:nth-child(even){
+    background-color: #f7f7f7;
+    border-top: 2px dashed #efefef;
+    border-bottom: 2px dashed #efefef;
+}
+
+.categ a{
+    text-decoration: none;
+    color: #111;
+    font-size: 1.1rem;
+    padding-left: 10px;
+}
+
+.categ img{
+    width: 100%;
+    height: auto;
+    margin: 3vh 0;
 }

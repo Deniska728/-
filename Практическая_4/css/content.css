@@ -285,10 +285,14 @@ input[type="submit"]{
     flex-direction: column;
 }
 
+.categ ul{
+margin: 2vh 0;
+}
+
 .categ li{
 width: 100%;
-margin: 0.9vh 0;
-padding: 0.9vh 0 1.3vh 0;
+margin: 0.7vh 0;
+padding: 0.7vh 0 1vh 0;
 }
 
 .categ li:nth-child(even){
@@ -308,4 +312,16 @@ padding: 0.9vh 0 1.3vh 0;
     width: 100%;
     height: auto;
     margin: 3vh 0;
+}
+
+.tags{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tags a{
+    padding: 1vh 1vh 1vh 0;
+    font-size: 1.24rem;
+    text-decoration: none;
+    color: #111;
 }

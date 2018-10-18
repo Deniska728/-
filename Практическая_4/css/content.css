@@ -30,6 +30,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    margin: 3vh 1vh;
 }
 
 .post > img, .post .img-container, .post > .img-container > img{
@@ -286,9 +287,9 @@ input[type="submit"]{
 }
 
 .categ li{
-width: 100%;
-margin: 0.9vh 0;
-padding: 0.9vh 0 1.3vh 0;
+    width: 100%;
+    margin: 0.9vh 0;
+    padding: 0.9vh 0 1.3vh 0;
 }
 
 .categ li:nth-child(even){

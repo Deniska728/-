@@ -35,6 +35,11 @@
     margin: 3vh 1vh;
 }
 
+.posts-right > .post:first-child,
+.posts-left > .post:first-child{
+    margin-top: 0;
+}
+
 .post>img,
 .post .img-container,
 .post>.img-container>img {
@@ -210,23 +215,23 @@ aside article h2 {
 .form>form {
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 
 input[type="email"] {
-    padding: 10px;
+    padding: 2vh 1vw;
     border: 1px solid #dfdfdf;
     background-color: #f5f5f5;
     margin: 0;
+    width: 70%;
 }
 
 input[type="email"]::placeholder {
     font-style: italic;
-    padding: 5px;
 }
 
 input:focus::placeholder {
     color: transparent;
-
 }
 
 input[type="submit"] {
@@ -235,7 +240,7 @@ input[type="submit"] {
     color: #f5f5f5;
     border: none;
     font-size: 0.9rem;
-    padding: 10px 18px;
+    padding: 2vh 1vw;
 }
 
 
@@ -330,10 +335,27 @@ input[type="submit"] {
     flex-wrap: wrap;
 }
 
-.tags a {
-    padding: 1vh 1vh 1vh 0;
-    font-size: 1.24rem;
+.tags h2{
+    margin: 0 0 2vh 0;
+}
+
+.tags > a {
+    padding: 1vh 1vh 0 0;
+    font-size: 1.2rem;
     text-decoration: none;
-    display: block;
     color: #111;
+    outline: none;
+    border-bottom: 1px solid transparent;
+}
+
+.tags > a:hover{
+    transition: 0.2s;
+    border-bottom: 1px solid #111;
+}
+
+.tags > a::after{
+    content: '/';
+    font-size: 28px;
+    margin: 0 3px 0 3px;
+    color: #d2d2d2
 }

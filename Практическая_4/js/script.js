@@ -5,6 +5,7 @@ const form = document.querySelector('.form'),
 
 if (window.outerWidth < '766') {
     posts.before(form);
+    aside.remove();
     form.style.display = 'flex'
 } else {
     form.style.display = 'block'

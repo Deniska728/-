@@ -6,7 +6,7 @@
 
     .about,
     .form {
-        display: none;
+        display: none; 
     }
 
     .form {
@@ -14,7 +14,11 @@
         width: 80%;
         flex-direction: column;
         justify-content: space-around;
-        align-items: center
+        align-items: center;
+    }
+
+    .form > form{
+        width: 75%;
     }
 
     .list-right>ul {
@@ -38,5 +42,23 @@
     div.slider-caption>h2 {
         font-size: 1.8rem;
         padding: 5px 0;
+    }
+}
+
+@media (max-width: 450px){
+    .content{
+        max-width: 95vw;
+    }
+
+    .headline{
+        width:50vh;
+    }
+
+    .headline > h3{
+        font-size: 1.5rem;
+    }
+
+    .photos-left, .photos-right {
+        width: 100% !important;
     }
 }

@@ -1,41 +1,10 @@
 @media (max-width: 765px) {
-
-    figure.slider{
-        animation: none;
-    }
-
-    .about,
+ .about,
     .form {
         display: none;
     }
 
-    .form{
-        padding: 1%;
-        width: 80%;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center
-    }
-
     .list-right>ul {
         width: 100% !important;
-    }
-
-    .content>.posts{
-        max-width: 100%;
-    }
-
-    .posts-right,
-    .posts-left{
-        max-width: 50%;
-    }
-
-    div.slider-caption{
-        margin-bottom: 10px;
-    }
-
-    div.slider-caption > h1,  div.slider-caption > h2{
-        font-size: 1.8rem;
-        padding: 5px 0;
-    }
+    
 }

@@ -59,14 +59,12 @@
     width: 100%;
     display: block;
     height: auto;
-    outline: none;
 }
 
 .left-pic>a{
     width: 100%;
     display: block;
     height: 50%;
-    outline: none;
 }
 
 .left-pic>a>img,
@@ -92,7 +90,6 @@
 
 .photos-right a {
     display: block;
-    outline: none;
     height: auto;
 }
 

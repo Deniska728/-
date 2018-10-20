@@ -1,9 +1,5 @@
 @media (max-width: 765px) {
 
-    figure.slider {
-        animation: none;
-    }
-
     .about,
     .form {
         display: none; 
@@ -15,10 +11,20 @@
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+        padding-bottom: 2vh;
+        margin-bottom: 4vh;
     }
 
     .form > form{
         width: 75%;
+    }
+
+    input[type="submit"], input[type="email"]{
+        padding: 1.5vh 1vh;
+    }
+
+    input[type="submit"]{
+        width: 30%;
     }
 
     .list-right>ul {
@@ -46,6 +52,30 @@
 }
 
 @media (max-width: 450px){
+
+    .post > h3{
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+    }
+
+    div.slider-caption p {
+        font-size: 0.8rem;
+    }
+
+    div.slider-caption>h1, div.slider-caption>h2 {
+        font-size: 1.4rem;
+        padding: 3px 0;
+    }
+
+    section.captioned-gallery{
+        height: 28vh;
+    }
+
+    figure.slider {
+        animation: none;
+        height: 100%;
+    }
+
     .content{
         max-width: 95vw;
     }
@@ -56,6 +86,10 @@
 
     .headline > h3{
         font-size: 1.5rem;
+    }
+
+    input[type="submit"], input[type="email"]{
+        padding: 1vh 1vh;
     }
 
     .photos-left, .photos-right {

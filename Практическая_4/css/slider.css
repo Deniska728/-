@@ -21,11 +21,11 @@
   }
   figure.slider figure { 
     width: 20%;
-    height: auto;
+    height: 100%;
   }
   figure.slider img {
     width: 100%;
-    height: auto;
+    height: 100%;
   }
 
   div.slider-caption{

@@ -1,6 +1,6 @@
 @media (max-width: 765px) {
 
-    figure.slider{
+    figure.slider {
         animation: none;
     }
 
@@ -9,7 +9,7 @@
         display: none;
     }
 
-    .form{
+    .form {
         padding: 1%;
         width: 80%;
         flex-direction: column;
@@ -21,20 +21,21 @@
         width: 100% !important;
     }
 
-    .content>.posts{
+    .content>.posts {
         max-width: 100%;
     }
 
     .posts-right,
-    .posts-left{
+    .posts-left {
         max-width: 50%;
     }
 
-    div.slider-caption{
+    div.slider-caption {
         margin-bottom: 10px;
     }
 
-    div.slider-caption > h1,  div.slider-caption > h2{
+    div.slider-caption>h1,
+    div.slider-caption>h2 {
         font-size: 1.8rem;
         padding: 5px 0;
     }

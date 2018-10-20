@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/content.css">
     <link rel="stylesheet" href="css/instagram.css">
+    <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="fonts/fontawesome-free-5.3.1-web/css/all.min.css">
     <title>Document</title>
 </head>
@@ -204,7 +205,7 @@
                         <input type="submit" value="submit">
                     </form>
                 </article>
-                <article class="aside-post"> 
+                <article class="aside-post">
                     <h2>Latest posts</h2>
                     <ul>
                         <li>
@@ -227,10 +228,10 @@
                 <article class="inst-aside">
                     <h2>Instagram</h2>
                     <div class="inst">
-                    <a href="#"><img src="img/aside/inst1.jpg" alt=""></a>
-                    <a href="#"><img src="img/aside/inst2.jpg" alt=""></a>
-                    <a href="#"><img src="img/aside/inst3.jpg" alt=""></a>
-                    <a href="#"><img src="img/aside/inst4.jpg" alt=""></a>
+                        <a href="#"><img src="img/aside/inst1.jpg" alt=""></a>
+                        <a href="#"><img src="img/aside/inst2.jpg" alt=""></a>
+                        <a href="#"><img src="img/aside/inst3.jpg" alt=""></a>
+                        <a href="#"><img src="img/aside/inst4.jpg" alt=""></a>
                     </div>
                 </article>
                 <article class="categ">
@@ -277,38 +278,77 @@
                 </article>
             </aside>
         </section>
-    </main>
-    <section class="instagram">
-        <div class="headline">
-            <h3>Instagram</h3>
-        </div>
-        <div class="photos">
-            <div class="photos-left">
-                <div class="left-pic">
-                    <a href="#"><img src="img/inst/1.jpg" alt=""></a>
-                    <a href="#"><img src="img/inst/2.jpg" alt=""></a>
-                </div>
-                <div class="right-pic">
-                    <a href="#">
-                        <img src="img/inst/3.jpg" alt="">
-                    </a>
-                </div>
+        <section class="instagram">
+            <div class="headline">
+                <h3>Instagram</h3>
             </div>
-            <div class="photos-right">
-                <div class="img-left">
-                    <a href="#"><img src="img/inst/4.jpg" alt=""></a>
-                    <div class="img-left-bottom">
-                        <a href="#"><img src="img/inst/5.jpg" alt=""></a>
-                        <a href="#"><img src="img/inst/6.jpg" alt=""></a>
+            <div class="photos">
+                <div class="photos-left">
+                    <div class="left-pic">
+                        <a href="#"><img src="img/inst/1.jpg" alt=""></a>
+                        <a href="#"><img src="img/inst/2.jpg" alt=""></a>
+                    </div>
+                    <div class="right-pic">
+                        <a href="#">
+                            <img src="img/inst/3.jpg" alt="">
+                        </a>
                     </div>
                 </div>
-                <div class="img-right">
-                    <a href="#"><img src="img/inst/7.jpg" alt=""></a>
-                    <a href="#"><img src="img/inst/8.jpg" alt=""></a>
+                <div class="photos-right">
+                    <div class="img-left">
+                        <a href="#"><img src="img/inst/4.jpg" alt=""></a>
+                        <div class="img-left-bottom">
+                            <a href="#"><img src="img/inst/5.jpg" alt=""></a>
+                            <a href="#"><img src="img/inst/6.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="img-right">
+                        <a href="#"><img src="img/inst/7.jpg" alt=""></a>
+                        <a href="#"><img src="img/inst/8.jpg" alt=""></a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
+    <footer>
+        <section class="list-left">
+            <p>&#169; VLOGER 2015.</p>
+            <p>Made with by <a href="#">beautheme.com</a>. All right Reserved</p>
+        </section>
+        <section class="list-right">
+            <ul>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">CONTACT US</a></li>
+                <li><a href="#">SITE MAP</a></li>
+                <li><a href="#">RSS</a></li>
+            </ul>
+        </section>
+    </footer>
+    <script>
+        const   form = document.querySelector('.form'),
+                about = document.querySelector('.about'),
+                aside = document.querySelector('aside'),
+                posts = document.querySelector('.posts');
+
+        if(window.outerWidth < '766'){
+            posts.before(form);
+            form.style.display = 'flex'
+        } else {
+            form.style.display = 'block'
+        }
+
+        document.querySelector('body').onresize = () => {
+            if(window.outerWidth < '766'){
+                form.style.display = 'flex'
+                posts.before(form);
+                aside.remove();
+            } else {
+                form.style.display = 'block'
+                posts.after(aside);
+                about.after(form);
+            }
+        }
+    </script>
 </body>
 
 </html>

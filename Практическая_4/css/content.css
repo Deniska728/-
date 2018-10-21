@@ -339,12 +339,6 @@ input[type="submit"] {
     font-size: 1.2rem;
     text-decoration: none;
     color: #111;
-    border-bottom: 1px solid transparent;
-}
-
-.tags > a:hover{
-    transition: 0.2s;
-    border-bottom: 1px solid #111;
 }
 
 .tags > a::after{

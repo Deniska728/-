@@ -28,7 +28,10 @@
     }
 
     .list-right>ul {
-        width: 100% !important;
+        height: 80%;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-around
     }
 
     .content>.posts {
@@ -81,7 +84,7 @@
     }
 
     .headline{
-        width:50vh;
+        width:40vh;
     }
 
     .headline > h3{
@@ -94,5 +97,8 @@
 
     .photos-left, .photos-right {
         width: 100% !important;
+    }
+    .list-left > p:last-child {
+        text-align: right;
     }
 }

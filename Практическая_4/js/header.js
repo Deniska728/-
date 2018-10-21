@@ -1,34 +1,23 @@
-let header = document.querySelector("header"),
-      search = document.querySelector(".search"),
-      icons = document.querySelector(".icons"),
-      button = document.querySelector(".button"),
-      nav = document.querySelector("nav");
+const header = document.querySelector("header"),
+    icons = document.querySelector(".icons"),
+    button = document.querySelector(".button");
 
-document.querySelector("body").onresize = () => {
-    if (window.outerWidth < '770'){
-        search.remove();
-        nav.remove(); 
-    } else {
-        icons.after(nav);
-        nav.after(search);
-    }
+
+const newNav = nav.cloneNode(true),
+    newSearch = search.cloneNode(true);
+
+const navbar = document.createElement('section');
+
+navbar.classList.add('new-navbar');
+
+navbar.append(newNav);
+navbar.append(newSearch);
+
+header.after(navbar);
+
+button.onclick = () => {
+    newNav.classList.remove('none');
+    newNav.classList.add('flex');
+    newSearch.classList.toggle('flex');
+    navbar.classList.toggle('toggle-open')
 }
-
-if (window.outerWidth < '770') {
-    search.remove();
-    nav.remove();
-}
-
-// const newNav = nav,
-//       newSearch = search
-
-// const navbar = document.createElement('div');
-// navbar.classList.add('new-navbar');
-// navbar.append(newNav);
-// navbar.append(newSearch);
-
-
-// button.onclick = () => {
-//     header.after(navbar);
-//     navbar.classList.toggle('toggle-open')
-// }

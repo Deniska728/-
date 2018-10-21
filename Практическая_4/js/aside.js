@@ -3,7 +3,7 @@ const form = document.querySelector('.form'),
     aside = document.querySelector('aside'),
     posts = document.querySelector('.posts');
 
-if (window.outerWidth < '766') {
+if (window.outerWidth < '770') {
     posts.before(form);
     aside.remove();
     form.style.display = 'flex'
@@ -12,7 +12,7 @@ if (window.outerWidth < '766') {
 }
 
 document.querySelector('body').onresize = () => {
-    if (window.outerWidth < '766') {
+    if (window.outerWidth < '770') {
         form.style.display = 'flex'
         posts.before(form);
         aside.remove();

@@ -335,7 +335,7 @@ input[type="submit"] {
 }
 
 .tags > a {
-    padding: 1vh 1vh 0 0;
+    padding: 0.5vh 0.5vh 0 0;
     font-size: 1.2rem;
     text-decoration: none;
     color: #111;

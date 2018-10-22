@@ -13,3 +13,7 @@ a:focus {
 .none {
     display: none !important;
 }
+
+.gray {
+    color: #888888;
+}

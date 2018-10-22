@@ -142,22 +142,22 @@ input[type="search"]:focus {
     transform: translateY(5px)
 }
 
-.button:hover>span {
+.button-toggle>span {
     height: 0;
 }
 
-.button:hover>span::before,
-.button:hover>span::after {
+.button-toggle>span::before,
+.button-toggle>span::after {
     display: block;
     background-color: #000;
 }
 
-.button:hover>span::before {
+.button-toggle >span::before {
     transform: rotate(45deg);
     width: 20px;
 }
 
-.button:hover>span::after {
+.button-toggle >span::after {
     transform: rotate(-45deg);
     width: 20px;
 }
@@ -174,13 +174,6 @@ input[type="search"]:focus {
 .new-navbar>nav {
     width: 50%;
 }
-
-/* .new-navbar-container{
-    width: 60%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-} */
 
 .new-navbar .navbar {
     width: 100%;

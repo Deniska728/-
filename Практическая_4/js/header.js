@@ -19,5 +19,6 @@ button.onclick = () => {
     newNav.classList.remove('none');
     newNav.classList.add('flex');
     newSearch.classList.toggle('flex');
-    navbar.classList.toggle('toggle-open')
+    navbar.classList.toggle('toggle-open');
+    button.classList.toggle('button-toggle');
 }

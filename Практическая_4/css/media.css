@@ -227,6 +227,15 @@
         padding: 1.2vh 0.3vw;
     }
     
+    .aside-post a.theme {
+        font-size: 0.8rem;
+    }
+    
+    .aside-post a.heading {
+        font-size: 1.1rem;
+        
+    }
+    
 }
 
 @media (max-width: 1200px) {

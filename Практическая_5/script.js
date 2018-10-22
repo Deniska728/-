@@ -46,6 +46,4 @@ function howSort(obj, what, how){
     return objNew;
 }   
 
-console.log(new Date('2000.10.15'))
-
 console.log(howSort(people, 'date' , 'mintomax'));

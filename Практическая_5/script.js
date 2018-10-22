@@ -46,4 +46,5 @@ function howSort(obj, what, how){
     return objNew;
 }   
 
+
 console.log(howSort(people, 'date' , 'mintomax'));

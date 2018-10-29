@@ -23,7 +23,7 @@ const array = [
 ]
 
 
-const functionName = (arr, callback) => {
+const functionName = (arr) => {
   const newObject = {};
   let method;
 
@@ -44,17 +44,10 @@ const functionName = (arr, callback) => {
   }
 
   if(method != undefined){
-    callback(method)
+    ((a) => console.log(a()))(method)
   }
 
   return newObject;
 }
 
-
-console.log( functionName(array, function(func){
-  console.log(func())
-}) );
-
-functionName(array, function(func){
-  console.log(func())
-})
+functionName(array);

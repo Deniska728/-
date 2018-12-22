@@ -53,6 +53,8 @@
 
 .left-pic {
     width: 33%;
+    display: flex;
+    flex-direction: column;
 }
 
 .right-pic>a {
@@ -124,6 +126,8 @@
 
 .img-right {
     max-width: 33%;
+    display: flex;
+    flex-direction: column;
 }
 
 .img-right>a,
@@ -135,4 +139,13 @@
 .img-right>a>img {
     width: 100%;
     height: 100%;
+}
+
+.img-left-bottom:hover{
+    flex-direction: row-reverse;
+}
+
+.img-right:hover,
+.left-pic:hover{
+    flex-direction: column-reverse;
 }

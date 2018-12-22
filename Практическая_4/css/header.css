@@ -55,6 +55,7 @@ header>section:last-child {
 
 .icons {
     width: 8vw;
+    opacity: 1;
 }
 
 header .icons i {

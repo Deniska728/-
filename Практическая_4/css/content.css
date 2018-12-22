@@ -59,6 +59,10 @@
     padding: 7px;
 }
 
+.img-container i{
+    opacity: 1;
+}
+
 .img-container>a:last-child{
     left: 5px;
     bottom: 5px;

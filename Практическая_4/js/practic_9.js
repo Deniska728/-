@@ -22,4 +22,3 @@ let timerId = setInterval( () => {
 let brow = navigator.userAgent
 let aboutBrow = brow.match(/[A-Za-z]+\/[0-9]{2}\.[0-9]/g)
 document.querySelector('#about-brow').innerHTML = `Ваш браузер ${aboutBrow}`
-

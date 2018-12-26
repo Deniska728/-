@@ -19,22 +19,28 @@ let drop = e => {
 }
 
 let checkSize = file => {
-  return file.size < 25165824 && file.size > 30720
+  return file.size < 3145728 && file.size > 30720
 }
 
 let handleFiles = files => {
   for(let file of files){
-    if(!!file.type.match('image') && checkSize(file)){
-      let img = $('<img>', { alt: '' })
-      let reader = new FileReader()
-      let findImg = $('section > figure').find('img')
-      reader.onloadend = () => {
-          img.attr('src', reader.result)
+    if(!!file.type.match('image')){
+      if(checkSize(file)){
+        let img = $('<img>', { alt: '' })
+        let reader = new FileReader()
+        let findImg = $('section > figure').find('img')
+        reader.onloadend = () => {
+            img.attr('src', reader.result)
+        }
+        reader.readAsDataURL(file)
+        if(findImg) findImg.remove()
+        $('section > figure').append(img)
+        resetHandlersForPriora()
+      } else {
+        alert('Добавляемое изображение должно быть не менее 30Кб и не более 3Мб')
       }
-      reader.readAsDataURL(file)
-      if(findImg) findImg.remove()
-      $('section > figure').append(img)
-      resetHandlersForPriora()
+    } else{
+      alert('Вы добавляете не изображение')
     }
   }
 }

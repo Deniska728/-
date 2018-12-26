@@ -1,24 +1,23 @@
-// const photos = document.querySelector('.photos')
+const photos = document.querySelector('.photos')
 
-// photos.onclick = function(e){
-//   let target = e.target
-//   e.preventDefault()
-//   while(target != photos){
-//     if(target.getAttribute('data-img')){
-//       const arrPhotos = document.querySelectorAll('[data-img="img"]')
-//       console.log(arrPhotos[0])
-//       shuffleArray(arrPhotos[0])
-//       console.log(arrPhotos[0])
-//       return
-//     }
-//     target = target.parentNode;
-//   }
-  
-// }
+const shuffleArray = array => {
+    for (let i = array.length - 1; i > 0; i--) {
+        let newArray = array.slice(0)
+        Array.from(newArray).sort( (a, b) => Math.random() - 0.5 )
+    }
+}
 
-// function shuffleArray(array) {
-//   for (let i = array.length - 1; i > 0; i--) {
-//       const j = Math.floor(Math.random() * (i + 1));
-//       [array[i], array[j]] = [array[j], array[i]];
-//   }
-// }
+photos.onclick = e =>{
+   let target = e.target
+   e.preventDefault()
+   while(target != photos){
+     if(target.getAttribute('data-img')){
+       const arrPhotos = document.querySelectorAll('[data-img="img"]')
+       shuffleArray(arrPhotos)
+       return
+     }
+     target = target.parentNode
+   }
+}
+
+

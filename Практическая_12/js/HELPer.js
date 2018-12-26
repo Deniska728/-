@@ -7,10 +7,10 @@ let getCoord = elem => {
   let right = elem.getBoundingClientRect().right + pageXOffset;
   let left = elem.getBoundingClientRect().left + pageXOffset;
   return {
-    top: top,
-    bottom: bottom,
-    right: right,
-    left: left,
+    top,
+    bottom,
+    right,
+    left,
     preventTop: 0,
     preventLeft: 0
   };
@@ -23,8 +23,8 @@ let getSize = elem => {
   let width = elem.getBoundingClientRect().right - elem.getBoundingClientRect().left;
   let height = elem.getBoundingClientRect().bottom - elem.getBoundingClientRect().top;
   return {
-    width: width,
-    height: height
+    width,
+    height
   };
 }
 
@@ -40,7 +40,6 @@ let setDisplayStyle = (elems, ...styles) => {
 let resetHandlers = (innerImg) => {
   innerImg.draggable({ disabled: true })
   innerImg.css("border", "");
-  $("body").off("keydown");
   $('[name="width-plus"]').off('click')
   $('[name="width-minus"]').off('click')
   $('[name="height-plus"]').off('click')

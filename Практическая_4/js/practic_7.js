@@ -16,8 +16,8 @@ photos.onclick = e =>{
   e.preventDefault()
   while(target != photos){
     if(target.getAttribute('data-img')){
-      const arrPhotos = document.querySelectorAll('[data-img="img"]')
-      const newArr = [] 
+      const newArr = []
+      let arrPhotos = document.querySelectorAll('[data-img="img"]')
       arrPhotos.forEach( img => {
          newArr.push(img.src)
       })

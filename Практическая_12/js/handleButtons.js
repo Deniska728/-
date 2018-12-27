@@ -20,3 +20,18 @@ let handleButtons = (target) => {
     })
   })
 }
+
+$('[name="print"]').click( function(){
+  let priotPriora = $( "section > figure" ).clone();
+  priotPriora.css( 'position', 'relative')
+  priotPriora.find("img:first-child")
+    .css({
+      width: getSize($('section > figure')).width + "px",
+      height: getSize($('section > figure')).height + "px"
+    });
+  $("body>*").hide();
+  $("body").append(priotPriora);
+  window.print()
+  $("body>*").show()
+  priotPriora.remove();
+})

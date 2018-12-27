@@ -35,7 +35,6 @@ let handleFiles = files => {
         reader.readAsDataURL(file)
         if(findImg) findImg.remove()
         $('section > figure').append(img)
-        resetHandlersForPriora()
       } else {
         alert('Добавляемое изображение должно быть не менее 30Кб и не более 3Мб')
       }

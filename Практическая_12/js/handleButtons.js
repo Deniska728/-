@@ -22,16 +22,16 @@ let handleButtons = (target) => {
 }
 
 $('[name="print"]').click( function(){
-  let priotPriora = $( "section > figure" ).clone();
-  priotPriora.css( 'position', 'relative')
-  priotPriora.find("img:first-child")
+  let printPriora = $( "section > figure" ).clone()
+  printPriora.css( 'position', 'relative')
+  printPriora.find("img:first-child")
     .css({
       width: getSize($('section > figure')).width + "px",
       height: getSize($('section > figure')).height + "px"
-    });
-  $("body>*").hide();
-  $("body").append(priotPriora);
+    })
+  $("body>*").hide()
+  $("body").append(printPriora)
   window.print()
   $("body>*").show()
-  priotPriora.remove();
+  printPriora.remove()
 })

@@ -28,7 +28,7 @@ gallery.find('img').draggable({
     cloneElement = $(this)
     cloneElement.css("display", "inline")
   }
-});
+})
  
 
 trash.on('click', movePrior)
@@ -40,15 +40,16 @@ trash.droppable({
     $($(this).find('img:first-child')).css({
       'border': '',
     })
-    imgClone = ui.helper.clone();
-    $(this).append(imgClone);
+    imgClone = ui.helper.clone()
+    $(this).append(imgClone)
     imgClone.css({
       position: "absolute",
       top: getCoord(ui.helper[0]).top - getCoord(this).top,
       left: getCoord(ui.helper[0]).left - getCoord(this).left,
       "z-index": '50'
-    });
+    })
     cloneElement.parent().remove()
+
     trash.find('img:not(:first-child)').on('click', function(event){
       let target = event.target
       let innerImg = $(this).parent().find('img:not(:first-child)')
@@ -69,14 +70,14 @@ trash.droppable({
             $(this).css({
               top: imgInfo.preventTop,
               left: imgInfo.preventLeft
-            });
+            })
           }
         }
       })
       handleButtons(target)
     })
   }
-});
+})
 
 function movePrior(event){
   let findImg2 = $(this).find('img:not(:first-child)')
@@ -93,22 +94,25 @@ function movePrior(event){
           $(findImg).css({
             top: parseInt(imgInfo.top) - 5 
           })
-        break;
+        break
+
         case 40: 
           $(findImg).css({
             top: parseInt(imgInfo.top) + 5
           })
-        break; 
+        break
+
         case 39: 
           $(findImg).css({
             left: parseInt(imgInfo.left) + 5
           })
-        break; 
+        break
+
         case 37: 
           $(findImg).css({
             left: parseInt(imgInfo.left) - 5
           })
-        break;    
+        break   
       }
       return false
     })

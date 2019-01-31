@@ -4,7 +4,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
   $lastname = $_POST['lastname'];
   $age = $_POST['age'];
   $password = $_POST['password'];
-  $mail = $_POST['mail']
+  $mail = $_POST['mail'];
 
   checkValid($name, $lastname, $age, $password, $mail);
 }

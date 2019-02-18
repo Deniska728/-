@@ -42,10 +42,10 @@ class FileReader {
       $today = date('d.m.Y');
       $todayDate = new DateTime($today);
 
-      $lts = $toDate->diff($todayDate);
-      $leftToStudy = $lts->format('%a');
+      $trd = $toDate->diff($todayDate);
+      $timeFromReceiptDate = $trd->format('%a');
 
-      if((int)$leftToStudy < $day){
+      if((int)$timeFromReceiptDate < $day){
         foreach ($arrayProducts[$i] as $key => $value){
           echo $key.": ".$value."<br>";
         }

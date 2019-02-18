@@ -1,0 +1,20 @@
+Salt: sea
+Cost: 40r
+Manufacturer: factory
+Shelf life: 12 mounth
+Date of receipt: 12.02.2019
+Bread: white
+Cost: 50r
+Manufacturer: factory
+Shelf life: 5 days
+Date of receipt: 14.02.2019
+Salt: sea
+Cost: 40r
+Manufacturer: factory
+Shelf life: 12 mounth
+Date of receipt: 16.02.2019
+Milk: cow
+Cost: 38r
+Manufacturer: cow
+Shelf life: 2 weeks
+Date of receipt: 10.02.2019
